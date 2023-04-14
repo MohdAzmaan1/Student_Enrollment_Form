@@ -136,8 +136,8 @@ function validateAndGetFormData() {
     function fillData(jsonObj){
         saveRecToLocalStorage(jsonObj);
         var record = JSON.parse(jsonObj.data).record;
-        $("#studentName").val(record.Name);
-        $("#studentClass").val(record.Class);
+        $("#studentName").val(record.studentName);
+        $("#studentClass").val(record.studentClass);
         $("#studentDOB").val(record.studentDOB);
         $("#studentAddress").val(record.studentAddress);
         $("#studentEnrollmentDate").val(record.studentEnrollmentDate);
